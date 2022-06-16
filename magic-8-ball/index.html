@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/magic-8-ball/src/styles.css" />
     <link rel="stylesheet" href="/magic-8-ball/src/8-ball.css" />
     <link rel="stylesheet" href="/magic-8-ball/src/background.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="main">
@@ -15,7 +16,7 @@
       <div class="twinkling"></div>
       <div class="clouds"></div>
 
-      <div class="interaction__container">
+      <div class="interaction-container">
         <input
           id="input"
           class="input"
@@ -24,20 +25,20 @@
           value=""
           required
         />
-        <span class="input__bar"></span>
-        <label>Ask Your Question</label>
+        <span class="input-bar"></span>
+        <label>What is on your mind?</label>
         <p id="error" class="error"></p>
       </div>
 
-      <button id="button" type="submit" class="button">Get Answer</button>
+      <button id="button" type="submit" class="button">Let Fate Decide!</button>
 
       <div id="ball" class="ball">
-        <div class="ball__response">
-          <div class="ball__triangle"></div>
-          <div id="answer" class="ball__answer"></div>
+        <div class="ball-response">
+          <div class="ball-triangle"></div>
+          <div id="answer" class="ball-answer"></div>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="/magic-8-ball/src/script.js"></script>
   </body>
 </html>
